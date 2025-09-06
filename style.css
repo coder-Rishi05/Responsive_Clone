@@ -1,22 +1,103 @@
 :root {
-    --primary : #0C0C0C;
-    --secondary: #E9E9E9;
+  --primary: #0c0c0c;
+  --secondary: #e9e9e9d1;
+}
+
+@font-face {
+  font-family: font1;
+  src: url("fonts/HelveticaNowDisplay-Regular_5Mzhp8KlA8_CAVTbnsPOM.woff2");
+}
+
+@font-face {
+  font-family: font2;
+  src: url("fonts/Fontspring-DEMO-juana-extralightit_toKzXEsfr.ttf");
+}
+
+@font-face {
+  font-family: font3;
+  src: url("fonts/HelveticaNowDisplay-Regular_5Mzhp8KlA8_CAVTbnsPOM.woff2");
+}
+
+@font-face {
+  font-family: font4;
+  src: url("fonts/remixicon.woff2");
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: sans-serif; */
 }
-html
-   ,body {
-    height: 100%;
-    width: 100%;
-    background-color: var(--primary);
-}
-
-nav{
-    display: flex;
+html,
+body,
+main {
+  height: 100%;
+  width: 100%;
+  background-color: var(--primary);
+  color: var(--secondary);
 }
 
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0.8rem 5.2rem;
+}
+
+.left,
+img {
+  width: 3vw;
+}
+
+nav > .left {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  gap: 2vw;
+  font-family: monospace;
+}
+
+nav > .left > span {
+  font-size: 1rem;
+  font-weight: 100;
+  text-transform: capitalize;
+  /* letter-spacing: 1px; */
+}
+
+nav > .left > h2 {
+  white-space: nowrap;
+  /* width: 10vw; */
+  /* background-color: aqua; */
+  font-family: monospace;
+}
+
+nav > .right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4vw;
+  list-style: none;
+  font-family: font1;
+  font-size: 1.2rem;
+  font-family: "Courier New", Courier, monospace;
+  letter-spacing: -1px;
+  font-weight: 400;
+}
+
+nav > .right > li > span {
+  font-family: monospace;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: aliceblue;
+}
+
+nav > .right > button {
+  padding: 8px 20px;
+  border: none;
+  font: bold;
+  background-color: #24cfa6;
+  font-size: 1.2rem;
+  border-radius: 5px;
+}
