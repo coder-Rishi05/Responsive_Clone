@@ -34,8 +34,7 @@
   box-sizing: border-box;
 }
 html,
-body,
-main {
+body {
   height: 100%;
   width: 100%;
   background-color: var(--primary);
@@ -47,10 +46,9 @@ nav {
   justify-content: space-between;
   width: 100%;
   padding: 1rem 5rem;
-  /* color: var(--secondary); */
 }
 
-.left,
+nav > .left,
 img {
   width: 42px;
 }
@@ -65,11 +63,8 @@ nav > .left {
   color: #ffffffb6;
 }
 
-nav > .left > h2 > span {
-  font-size: 1.2vw;
-  font-weight: 600;
-}
-nav > .left > h2 {
+nav > .left > h2,
+span {
   font-size: 1.2vw;
   font-weight: 600;
 }
@@ -101,7 +96,6 @@ nav > .right > button {
   border-radius: 5px;
 }
 
-
 nav > .nav3 {
   display: flex;
   gap: 1rem;
@@ -112,12 +106,35 @@ nav > .nav3 {
   display: none;
 }
 
+main {
+  padding: 1rem 5rem;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+}
 
+main > .left-section {
+  width: 50%;
+}
+main > .right-section {
+  width: 50%;
+  height: 100%;
+  background-color: #24cfa6;
+}
 
-@media (max-width:600px) {
+main > .left-section > h1{
+  color: #e9e9e9;
+  font-size: 3rem;
+  font-family: font1;
+  /* letter-spacing: 2px; */
+  font-weight: 500;
+}
 
+@media (max-width: 600px) {
   nav {
-    padding: 0 2rem;
+    padding: 1rem 2rem;
   }
 
   nav > .right {
@@ -125,5 +142,27 @@ nav > .nav3 {
   }
   nav > .nav3 {
     display: block;
+    display: flex;
+    gap: 1.5rem;
+    font-size: 1.2rem;
+  }
+
+  nav > .left {
+    align-items: start;
+  }
+
+  nav > .left,
+  img {
+    width: 1.6rem;
+  }
+
+  nav > .left > h2,
+  span {
+    /* background-color: #24cfa6; */
+    font-size: 0.8rem;
+    font-weight: 600;
+    white-space: nowrap;
   }
 }
+
+
