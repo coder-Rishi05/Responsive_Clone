@@ -1,6 +1,11 @@
 :root {
   --primary: #0c0c0c;
-  --secondary: #e9e9e9d1;
+  --secondary: #e9e9e9;
+}
+
+@font-face {
+  font-family: navText;
+  src: url("fonts/NeueMachina-Light_gwWCZxVuQl.ttf");
 }
 
 @font-face {
@@ -27,7 +32,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* font-family: sans-serif; */
 }
 html,
 body,
@@ -35,7 +39,6 @@ main {
   height: 100%;
   width: 100%;
   background-color: var(--primary);
-  color: var(--secondary);
 }
 
 nav {
@@ -43,53 +46,49 @@ nav {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding: 0.8rem 5.2rem;
+  padding: 1rem 5rem;
+  /* color: var(--secondary); */
 }
 
 .left,
 img {
-  width: 3vw;
+  width: 42px;
 }
 
 nav > .left {
   display: flex;
-  align-items: center;
+  align-items: end;
   justify-items: center;
-  gap: 2vw;
-  font-family: monospace;
+  gap: 1vw;
+  font-family: navText;
+  width: 15vw;
+  color: #ffffffb6;
 }
 
-nav > .left > span {
-  font-size: 1rem;
-  font-weight: 100;
-  text-transform: capitalize;
-  /* letter-spacing: 1px; */
+nav > .left > h2 > span {
+  font-size: 1.2vw;
+  font-weight: 600;
 }
-
 nav > .left > h2 {
-  white-space: nowrap;
-  /* width: 10vw; */
-  /* background-color: aqua; */
-  font-family: monospace;
+  font-size: 1.2vw;
+  font-weight: 600;
 }
 
 nav > .right {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 4vw;
+  gap: 5rem;
   list-style: none;
   font-family: font1;
-  font-size: 1.2rem;
-  font-family: "Courier New", Courier, monospace;
-  letter-spacing: -1px;
-  font-weight: 400;
+  font-size: 1rem;
+  color: var(--secondary);
 }
 
 nav > .right > li > span {
-  font-family: monospace;
+  font-weight: bolder;
+  font-family: navText;
   font-size: 1.2rem;
-  font-weight: 700;
   color: aliceblue;
 }
 
@@ -98,6 +97,33 @@ nav > .right > button {
   border: none;
   font: bold;
   background-color: #24cfa6;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   border-radius: 5px;
+}
+
+
+nav > .nav3 {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  color: var(--secondary);
+  font-size: 1.5rem;
+  display: none;
+}
+
+
+
+@media (max-width:600px) {
+
+  nav {
+    padding: 0 2rem;
+  }
+
+  nav > .right {
+    display: none;
+  }
+  nav > .nav3 {
+    display: block;
+  }
 }
