@@ -288,7 +288,6 @@ main > .right > .play-circ {
 }
 
 main > .right > .plc {
-  
   position: absolute;
   top: 5%;
   z-index: 111;
@@ -337,6 +336,159 @@ main > .right > .right-in > .image-bottom {
 .page-2 {
   height: 100vh;
   width: 100%;
+}
+
+@media (max-width: 1350px) {
+  nav {
+    padding: 0.5rem 4.5rem;
+  }
+
+  nav > .left,
+  img {
+    width: 2.2rem;
+  }
+
+  nav > .left {
+    gap: 1vw;
+    width: 15vw;
+    color: #ffffffb6;
+  }
+
+  nav > .left > h2,
+  span {
+    font-family: font5;
+    font-size: 1.2vw;
+    font-weight: 400;
+  }
+
+  nav > .right {
+    gap: 2.5rem;
+    font-size: 0.9rem;
+  }
+
+  nav > .right > li > span {
+    font-weight: 700;
+    font-family: navText;
+    font-size: 1.12rem;
+    color: aliceblue;
+  }
+
+  nav > .right > button {
+    padding: 8px 17px;
+    border: none;
+    font: bold;
+    background-color: #24cfa6;
+    font-size: 1rem;
+    border-radius: 5px;
+  }
+
+  main > .left-section {
+    width: 45vw;
+  }
+
+  main > .left-section > h1 {
+    color: #e9e9e9;
+    font-size: 3vw;
+    font-family: font1;
+    font-weight: 700;
+    width: 80%;
+  }
+
+  .btns {
+    margin-top: 15px;
+    gap: 6px;
+  }
+
+  .btns > .tp,
+  .bt {
+    display: flex;
+    gap: 10px;
+  }
+
+  
+.price {
+  margin-top: 2.5rem;
+}
+
+.price > p {
+  color: #e9e9e9;
+  font-size: 2rem;
+  font-family: font3;
+  font-weight: 700;
+}
+
+.price > p > .priceValue {
+  color: #02e797;
+  font-size: 0.83em;
+}
+.price > p > small {
+  font-size: 1.4rem;
+}
+.price > p > .originalValue {
+  font-size: 0.6em;
+  position: relative;
+  color: #cbcbcb;
+  opacity: 0.7;
+  font-family: font1;
+}
+
+.price > p > .originalValue::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  width: 105%;
+  background-color: #cbcbcb;
+  height: 1px;
+}
+
+.price > .scratch {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #02e797;
+  font-family: font1;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+
+.buy-btn {
+  margin-top: 2rem;
+}
+.buy-btn > .buy {
+  background-color: #009560;
+  color: #e9e9e9;
+  padding: 1rem 4rem;
+  font-size: 1.4rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: 900;
+  font-family: GilRoyBold;
+}
+.buy-btn > .syllabus {
+  color: #f0f0f0;
+  background-color: #353535;
+  margin-left: 0.8rem;
+  padding: 1rem 3rem;
+  font-size: 1.4rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: 900;
+  font-family: GilRoyBold;
+}
+
+h2 {
+  color: white;
+  margin-top: 0.8rem;
+  font-size: 1.2rem;
+  font-family: font1;
+  font-weight: 400;
+}
+
+h2 > .date {
+  color: #02e797;
+}
+
+
 }
 
 @media (max-width: 600px) {
